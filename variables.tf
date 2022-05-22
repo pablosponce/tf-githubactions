@@ -5,10 +5,10 @@ variable "aws_region" {
 
 variable "aws_key" {
  type=string
- default="${{ secrets.AWS_KEY }}"
+ default=${{ secrets.AWS_KEY }}
 }
 
 variable "aws_secret" {
  type=string
- default="${{ secrets.AWS_SECRET }}"
+ default=${{ secrets.AWS_SECRET }}
 }
