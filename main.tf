@@ -18,7 +18,7 @@ resource "aws_s3_bucket" "c" {
 resource "aws_s3_object" "object" {
   bucket = aws_s3_bucket.c.bucket
   key    = "index.html"
-  content = "Hola Mundo"
+  content = "Hola!!!"
 }
 
 resource "aws_s3_bucket_versioning" "versioning" {
