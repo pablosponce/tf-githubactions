@@ -22,7 +22,7 @@ resource "aws_s3_object" "object" {
 }
 
 resource "aws_s3_bucket_versioning" "versioning" {
-  bucket = aws_s3_bucket.b.id
+  bucket = aws_s3_bucket.c.id
   versioning_configuration {
     status = "Enabled"
   }
