@@ -1,9 +1,9 @@
-resource "aws_s3_bucket" "b" {
-  bucket = "tf-actions-lab"
+resource "aws_s3_bucket" "c" {
+  bucket = "tf-githubactions-lab"
 }
 
 resource "aws_s3_object" "object" {
-  bucket = aws_s3_bucket.b.bucket
+  bucket = aws_s3_bucket.c.bucket
   key    = "index.html"
   content = "Hola Mundo"
 }
