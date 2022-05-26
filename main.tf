@@ -12,7 +12,7 @@ terraform {
 
 
 resource "aws_s3_bucket" "c" {
-  bucket = "tf-githubactions-lab"
+  bucket = "tf-githubactions-lab-pablo"
 }
 
 resource "aws_s3_object" "object" {
