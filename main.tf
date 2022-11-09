@@ -17,7 +17,7 @@ resource "aws_s3_bucket" "c" {
 
 resource "aws_s3_object" "object" {
   bucket  = aws_s3_bucket.c.bucket
-  key     = "index.html"
+  key     = "index.htm"
   content = "<html><head>Ejemplo de GitHub Action</head><body><p>Hola!</p></body></html>"
 }
 
