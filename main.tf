@@ -5,14 +5,14 @@ terraform {
 
     # The name of the Terraform Cloud workspace to store Terraform state files in.
     workspaces {
-      name = "tf-githubactions"
+      name = "tf-cursocloud"
     }
   }
 }
 
 
 resource "aws_s3_bucket" "c" {
-  bucket = "tf-githubactions-labbcncloud-pablo2"
+  bucket = "tf-githubactions-labbcncloud-pabloahorasi"
 }
 
 resource "aws_s3_object" "object" {
